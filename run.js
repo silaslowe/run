@@ -1,8 +1,8 @@
 $( document ).ready(function() {
     $("#submit").click(function(){
-        // let min = $("#minutes").val()
-        // $("#output").text($(min));
-      console.log("hmmmm");
+        let min = $("#minutes").val()
+        $("#output").text($(min));
+        // console.log("hmmmm");
     })
   });
   
