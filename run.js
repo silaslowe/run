@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     $("#submit").click(function(){
-        // let min = $("#minutes").val())
-        // $("#output").text($(min);
+        // let min = $("#minutes").val()
+        // $("#output").text($(min));
       console.log("hmmmm");
     })
   });
