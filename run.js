@@ -6,13 +6,11 @@ $(document).ready(function () {
     console.log(minRe);
     let second = Math.floor((parseInt(s) + minRe) / d);
     console.log(second);
-    let pace = `Your pace was a ${minute}.${second} mile!`;
-    console.log(pace);
-    return pace;
+    let pace = `Your mile pace was ${minute}.${second}!`;
+    $('#output').append(pace);
   };
-  $('#submit').click(function (event) {
+  $('#submit').click(function () {
     paceGetter($('#minutes').val(), $('#seconds').val(), $('#distance').val());
-    $('#output').append(event.result);
     event.preventDefault();
   });
 });
