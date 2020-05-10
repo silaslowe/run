@@ -3,10 +3,9 @@ $(document).ready(function () {
     let minute = Math.floor(m / d);
     let minRe = Math.floor((m % d) * 60);
     let second = Math.floor((parseInt(s) + minRe) / d);
-    console.log(second);
     if (second === 0) {
       let pace = `Your mile pace was ${minute}:${second}0!`;
-      $('#output').append(pace);
+      $('#output').text(pace);
     } else {
       let pace = `Your mile pace was ${minute}:${second}!`;
       $('#output').text(pace);
